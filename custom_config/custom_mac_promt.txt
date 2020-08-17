@@ -1,0 +1,11 @@
+.bashrc
+PS1="$(tput setaf 166)\u$(tput setaf 228)@\h $(tput setaf 71)\w $(tput sgr0)\n\$ "
+export PS1;
+ 
+ 
+.bash_profile
+# My custom prompt
+# export PS1="[\u@\h \W]\$ "
+if [ -f ~/.bashrc ]; then
+  source ~/.bashrc
+fi
